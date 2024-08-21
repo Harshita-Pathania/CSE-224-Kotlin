@@ -1,0 +1,47 @@
+//  LOCAL AND GLOBAL VARIABLES
+class Person{
+    var message="Hello"
+    fun displayInfo(){
+        println(message)
+    }
+}
+
+
+fun main(args:Array<String>) {
+
+   // VAR
+    var a=40
+    println(a)
+    a+=20
+    println(a)
+    
+    
+   // VAL
+    val pi=3.14
+    println(pi)
+    pi=3.147
+    println(pi)
+    
+    
+   // ` FOR RESERVED WORDS AS VAR NAME
+    var `try`=20
+    println(`try`)
+    
+    
+   // INITIALIZATION
+    var a=10
+    var b:Int
+    var c:Int
+    b=20
+    c=a+b
+    println(c)
+    
+    
+   // LOCAL AND GLOBAL VARIABLES
+    var msg="Hello"
+    println(msg)
+    val person=Person()
+    person.displayInfo()
+}
+
+

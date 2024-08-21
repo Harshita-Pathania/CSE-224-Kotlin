@@ -1,0 +1,34 @@
+fun main(){
+  // STRING INTERPOLATION
+  val a=10
+  val b=40
+  val result="The sum of $a and $b is ${a+b}"
+  println(result)
+  
+  
+ // DATA TYPES
+
+ // CHAR 
+  val letter:Char
+  letter='A'
+  println("$letter") //STRING INTERPOLATION
+  println(letter)
+  println('\$')
+  println('\\')
+  
+// STRING
+  val name: String="Harshita \nHarshita \nHarshita \nHarshita \nHarshita" //ESCAPED STRING
+  val name: String="""
+  Harshita
+  Harshita
+  Harshita
+  Harshita
+  Harshita"""  //RAW STRING
+  val name: String="""
+    Harshita
+Harshita	Harshita
+    Harshita"""
+  println(name)
+
+}
+  

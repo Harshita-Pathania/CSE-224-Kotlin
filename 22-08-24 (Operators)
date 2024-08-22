@@ -1,0 +1,68 @@
+fun main(){
+   // OPERATORS
+    
+   // ARITHMETIC
+
+    val a=10
+    val b=4
+    val sum= a+b
+    println("$a + $b = $sum")
+    println("$a * $b = ${a*b}")
+    println("$a - $b = ${a-b}")
+    println("$a / $b = ${a/b}")
+    println("$a % $b = ${a%b}")
+    
+    
+   // RELATIONAL
+
+	  val x=10
+    val y=6
+    val isEqual = a==b
+    println("$x == $y = $isEqual")
+    println("$x != $y = ${x!=y}")
+    println("$x > $y = ${x>y}")
+    println("$x >= $y = ${x>=y}")
+    println("$x <= $y = ${x<=y}")
+    println("$x < $y = ${x<y}")
+    
+    
+   // ASSIGNMENT
+
+	  var l=5
+    var m=5
+    var n=9
+    m+=n
+    println("$l += $n = $m")
+    l=m
+    m-=n
+    println("$l -= $n = $m")
+    l=m
+    m*=n
+    println("$l *= $n = $m")
+    l=m
+    m/=n
+    println("$l /= $n = $m")
+    l=m
+    m%=n
+    println("$l %= $n = $m")
+    
+    
+   // UNARY
+    
+    var i=7
+    var j=true
+    println("$i ++ = ${++i}")
+    println("$i -- = ${--i}")
+    println("!$j = ${!j}")
+    
+    
+   // LOGICAL
+
+	  val isTrue= true
+    val isFalse= false
+    val and = isTrue and isFalse
+    println("$isTrue and $isFalse = $and")
+    println("$isTrue or $isFalse = ${isTrue or isFalse}")
+    println("!$isTrue = ${!isTrue}")
+    
+}

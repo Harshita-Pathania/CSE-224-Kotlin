@@ -58,11 +58,26 @@ fun main(){
     
    // LOGICAL
 
-	  val isTrue= true
+	val isTrue= true
     val isFalse= false
     val and = isTrue and isFalse
     println("$isTrue and $isFalse = $and")
     println("$isTrue or $isFalse = ${isTrue or isFalse}")
     println("!$isTrue = ${!isTrue}")
+
+
+//     BITWISE
+    
+    val num1 = 12
+    val num2 = 25
+    val result: Int
+    val orr = num1 or num2   // result = number1.or(number2)
+    val andd = num1.and(num2)
+    val invert=num1.inv()
+    println(orr)
+    println(andd)
+    println(invert)
+    println(num2 shr 2)
+    println(num2 shl 2)
     
 }

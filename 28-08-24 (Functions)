@@ -1,0 +1,85 @@
+// FUNCTIONS
+
+fun demo(){
+    println("Hello World!")
+}
+
+fun sum(a:Int=10,b:Int=20){  //WITH DEFAULT ARGUMENTS
+    val c=a+b
+    println(c)
+}
+
+fun sum1(a:Int,b:Int){      //WITHOUT DEFAULT ARGUMENTS
+    val c=a+b
+    println(c)
+}
+
+fun sum2(a:Int,b:Int):Int{  //WITH RETURN TYPE
+    val c=a+b
+    return c
+}
+
+fun CtoF(c:Double):Double{
+    var f = c*9/5+32
+    return f
+}
+
+fun FtoC(f:Double):Double{
+    var c = (f-32)*5/9
+    return c
+}
+
+fun Fact(n:Int):Int{
+    if(n<=1){
+        return 1
+    }
+    return n*Fact(n-1)
+}
+
+fun Fib(n:Int):Int{
+    if(n==0 || n==1){
+        return n
+    }
+    return Fib(n-1)+Fib(n-2)
+}
+
+fun main(){
+    
+    demo()
+    sum(20,50)
+    sum()
+    sum1(20,30)
+    sum1()
+    val a=70
+    val b=20
+    println(sum2(a,b))
+    
+
+//  TEMPERATURE
+    val C = "27"
+    val F = "100"
+    
+    val cel = C?.toDoubleOrNull()
+    val fah = F?.toDoubleOrNull()
+    
+    if (cel != null) {
+        println("$cel C is equal to ${CtoF(cel)} F")
+    } else {
+        println("Invalid Celsius input")
+    }
+    if (fah != null) {
+        println("$fah F is equal to ${FtoC(fah)} C")
+    } else {
+        println("Invalid Fahrenheit input")
+    }
+    
+
+//  FACTORIAL
+    val n=5
+    println("Factorial of $n is ${Fact(n)}")
+    
+
+//  FIBONACCI
+    val m=8
+    println(Fib(6))
+}

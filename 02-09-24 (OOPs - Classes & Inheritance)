@@ -42,6 +42,28 @@ class People(var name:String, var age:Int){
     }
 }
 
+
+
+// INHERITANCE
+
+// BASE CLASS
+open class Rectangle(val a:Double,val b:Double){
+    fun area():Double{
+        return a*b
+    }
+    open fun display(){
+        println("Area of rectangle with dimensions $a and $b is ${area()}")
+    }
+}
+
+// DERIVED CLASS
+class Square(val side:Double):Rectangle(side,side){
+    override fun display(){
+        println("Area of square with side $side is ${area()}")
+    }
+}
+
+
 fun main(){
     var s1=Student()
     s1.result()
@@ -59,5 +81,10 @@ fun main(){
     y.intro()
     var z=People("Heena")
     z.intro()
+
+    val Rect=Rectangle(4.0,5.0)
+    Rect.display()
+    val Sqr=Square(3.0)
+    Sqr.display()
     
 }

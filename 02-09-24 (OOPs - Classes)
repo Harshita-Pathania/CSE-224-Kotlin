@@ -1,0 +1,63 @@
+// CLASSES
+
+class Student{
+    fun result(){
+        println("Pending")
+    }
+}
+
+
+// SECONDARY CONSTRUCTOR
+class Person{
+    var name:String
+    var age:Int
+    
+    constructor(x:String,y:Int){
+        this.name=x
+        this.age=y 
+    }
+    constructor(x:String){
+        this.name=x
+        this.age=10
+    }
+    constructor(){
+        this.name="Rahul"
+        this.age=32
+    }
+    fun intro(){
+        println("My name is $name and age is $age")
+    }
+}
+
+
+// PRIMARY CONSTRUCTOR
+class People(var name:String, var age:Int){
+    constructor(x:String): this(){
+        this.name=x
+        this.age=10
+    }
+    constructor(): this("Rahul",50)
+    fun intro(){
+        println("My name is $name and age is $age")        
+    }
+}
+
+fun main(){
+    var s1=Student()
+    s1.result()
+    
+    var a=Person("Riya",22)
+    a.intro()
+    var b=Person()
+    b.intro()
+    var c=Person("Heena")
+    c.intro()
+    
+    var x=People("Riya",22)
+    x.intro()
+    var y=People()
+    y.intro()
+    var z=People("Heena")
+    z.intro()
+    
+}

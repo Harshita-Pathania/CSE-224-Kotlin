@@ -1,0 +1,27 @@
+// INTERFACE
+
+interface Shape{
+    fun area():Double
+}
+
+open class Rectangle(val a:Double,val b:Double):Shape{
+    override fun area():Double{
+        return a*b
+    }
+    open fun display(){
+        println("Area of rectangle with dimensions $a and $b is ${area()}")
+    }
+}
+
+class Square(val side:Double):Rectangle(side,side){
+    override fun display(){
+        println("Area of square with side $side is ${area()}")
+    }
+}
+
+fun main(){
+    val Rect=Rectangle(4.0,5.0)
+    Rect.display()
+    val Sqr=Square(3.0)
+    Sqr.display()
+}
